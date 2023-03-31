@@ -17,14 +17,10 @@ export class CloudinaryService {
   }
 
   async uploadImage(dto: CloudinaryDto) {
-    //console.log(dto);
-    //return dto;
-
     try {
       const result = await this.cloudinary.uploader.upload(dto.file, {
         //public_id: 'sample_id',
         folder: dto.folder,
-        proxy: '',
       });
       console.log(result.public_id);
       return { public_id: result.public_id };

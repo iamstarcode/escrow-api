@@ -20,10 +20,10 @@ import { CloudinaryService } from './cloudinary/cloudinary.service';
   controllers: [AppController, CloudinaryController],
   providers: [
     AppService,
-    {
+    /*   {
       provide: APP_GUARD,
       useClass: SupabaseGuard,
-    },
+    }, */
     CloudinaryService,
   ],
 })

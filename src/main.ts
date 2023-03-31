@@ -37,7 +37,9 @@ async function bootstrap() {
     return res.send(req.csrfToken())
   }) */
 
-  await app.listen(process.env.PORT || 8000);
+  await app.listen(process.env.PORT || 8000, () =>
+    console.log(process.env.PORT || 8000),
+  );
 }
 
 bootstrap();

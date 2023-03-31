@@ -38,6 +38,7 @@
     "cookie-parser": "^1.4.6",
     "csurf": "^1.11.0",
     "dayjs": "^1.11.3",
+    "expo-server-sdk": "^3.7.0",
     "passport": "^0.5.3",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
